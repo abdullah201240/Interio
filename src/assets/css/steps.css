@@ -1,0 +1,72 @@
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left !important;
+    padding-left: 8%;
+
+}
+
+/* FAQ Section */
+.faq {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.faq h3 {
+    font-size: 1.2rem;
+    color: #ff7f00;
+    margin-top: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 3rem;
+}
+
+
+
+
+/* Small Button Styles */
+.btn {
+    font-size: 1rem; /* Smaller text size */
+    padding: 0.25rem 0.5rem; /* Reduced padding for smaller button */
+    border-radius: 4px; /* Smaller border radius */
+    width: auto; /* Set width to auto to fit the content */
+    min-width: 80px; /* Minimum width for consistency */
+    color: white;
+}
+
+.btn-warning {
+    background-color: #F8951F;
+    border-color: #F8951F;
+    margin-left: 3%;
+}
+
+.btn-warning:hover {
+    background-color: #e66c00;
+    border-color: #e66c00;
+}
+h2 {
+    position: relative;
+    display: inline; /* Maintain inline behavior */
+    margin-bottom: 1rem; /* Adjust as needed */
+    text-align: center; /* Center the text within the container */
+  }
+  h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Adjust distance from text */
+    transform: translateX(-50%); /* Center the underline */
+    height: 2px; /* Adjust thickness as needed */
+    width: 50%; /* Adjust to fit the text width */
+    background-color: orange; /* Set the underline color */
+  }

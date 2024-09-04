@@ -1,0 +1,144 @@
+
+/* Styling for headings */
+h2 {
+    position: relative;
+    display: inline; /* Maintain inline behavior */
+    margin-bottom: 1rem; /* Adjust as needed */
+    text-align: center; /* Center the text within the container */
+  }
+  
+  h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Adjust distance from text */
+    transform: translateX(-50%); /* Center the underline */
+    height: 2px; /* Adjust thickness as needed */
+    width: 50%; /* Adjust to fit the text width */
+    background-color: orange; /* Set the underline color */
+  }
+  
+  /* Ensure the container is centered */
+  .container1 {
+    text-align: center;
+  }
+  
+
+/* Section title styling */
+.section-title {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Card styling */
+.card1 {
+    border: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Container styling */
+.container1 {
+    background-color: rgb(242, 238, 232);
+    padding: 40px;
+    
+    margin: 0 auto;
+}
+
+
+
+/* Accordion styling */
+.accordion-button,
+.accordion-header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    font-size: medium;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Accordion button styling */
+.accordion-button {
+    justify-content: space-between;
+}
+
+/* Accordion button hover effect */
+.accordion-button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+/* Accordion body styling */
+.accordion-body {
+    background-color: white;
+    /* padding: 20px; */
+    border-top: 1px solid #ddd;
+    overflow: hidden; /* Prevents overflow */
+    word-wrap: break-word; /* Ensures long words break to fit within the container */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Accordion header styling */
+.accordion-header {
+    padding-left: 30px;
+    overflow: hidden; /* Prevents overflow within the header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space between title and icon */
+}
+
+/* Accordion header hover effect */
+.accordion-header:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.accordion-item {
+    margin-bottom: 1rem; 
+}
+
+/* Accordion title styling */
+.accordion-title {
+    flex-grow: 1; /* Allows title to take available space */
+    margin-right: 10px; /* Space between the title and the icon */
+    overflow: hidden; /* Ensures title text does not overflow */
+    text-overflow: ellipsis; /* Adds ellipsis (...) if the text overflows */
+    white-space: nowrap; 
+    /* Prevents text from wrapping to the next line */
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .accordion-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .accordion-title {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .accordion-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* Styling for headings in WhyChooseInterio component */
+.why-choose-heading,
+.commitment-heading {
+  display: inline-block;
+  margin-bottom: 2rem; /* Adjust as needed */
+}
+
+
+  
+

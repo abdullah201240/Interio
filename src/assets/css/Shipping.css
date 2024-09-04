@@ -1,0 +1,65 @@
+/* Styling for the container */
+.container2 {
+    position: relative;
+    padding: 2rem; /* Add padding to create space inside the container */
+    background-color: rgb(242, 238, 232); /* Background color */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for background color and shadow */
+}
+
+/* Hover effect for the container */
+.container2:hover {
+    background-color: #f0eae0; /* Slightly lighter background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to give a lifted effect */
+}
+
+/* Styling for headings inside the container */
+.container2 h2 {
+    position: relative;
+    display: inline-block; /* Maintain inline behavior */
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2rem; /* Adjust font size as needed */
+    color: #333; /* Adjust text color as needed */
+}
+
+/* Underline effect for headings */
+.container2 h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 0; /* Start with 0 width */
+    background-color: orange; /* Underline color */
+    transition: width 0.5s ease-in-out, background-color 0.3s ease-in-out; /* Smooth animation for width and color */
+}
+
+/* Expand underline on heading hover */
+.container2 h2:hover::after {
+    width: 100%; /* Expand the underline on hover */
+    background-color: #FF6347; /* Change the underline color on hover */
+}
+
+/* Optional: Add a subtle animation for the text color on heading hover */
+.container2 h2:hover {
+    color: #FF6347; /* Change text color on hover */
+    transition: color 0.3s ease-in-out; /* Smooth transition for text color */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #444;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+.container2 {
+    margin: auto;
+    max-width: 1200px;
+}
+

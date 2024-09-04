@@ -1,0 +1,106 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the carousel container is centered */
+.carousel-container {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Set the height of the carousel container relative to the viewport */
+.carousel-inner {
+  height: 70vh;
+  overflow: hidden; /* Ensures that no part of the image overflows */
+}
+
+/* Style the carousel items */
+.carousel-inner .carousel-item {
+  height: 100%;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* Ensures the image takes the full space of the item */
+}
+
+/* Custom animation using keyframes for left-to-right slide */
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Custom animation using keyframes for right-to-left slide */
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the custom animation to carousel items */
+.carousel-item-next.carousel-item-left {
+  animation: slideLeft 1s ease-in-out;
+}
+
+.carousel-item-prev.carousel-item-right {
+  animation: slideRight 1s ease-in-out;
+}
+
+.carousel-item.active.carousel-item-left,
+.carousel-item.active.carousel-item-right {
+  animation: none;
+}
+
+/* Style the carousel caption */
+.carousel-caption {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(8%, 45%);
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  width: 100%; 
+  max-width: 60%; 
+ 
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: orange;
+  border: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 20vh;
+  }
+
+  .carousel-caption {
+    top: 60%; /* Adjust top positioning for smaller screens */
+    padding: 0 10px;
+  }
+  
+  .btn-primary {
+    padding: 8px 16px;
+  }
+}

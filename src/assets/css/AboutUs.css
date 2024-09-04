@@ -1,0 +1,90 @@
+
+.about-us-section {
+    background-color: #F1F1F1;
+    background-image: url('../img/Group90.png'); 
+    background-repeat: no-repeat;
+    background-size:contain; 
+    background-position: center center; 
+    color: #333;
+}
+
+
+.breadcrumb {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+img.img-fluid {
+    border-radius: 8px;
+}
+
+/* Layout for images */
+.welcome-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+
+.welcome-images > div:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.welcome-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.welcome-images .row {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between the smaller images */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us-section {
+        padding: 40px 0;
+    }
+
+    .welcome-images {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .welcome-images > div:first-child {
+        grid-row: 1;
+    }
+    
+    .welcome-images .row {
+        flex-direction: row;
+    }
+
+    .welcome-images img {
+        border-radius: 8px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+.responsive-image-container {
+    width: 100%;
+    overflow: hidden; /* Ensures no overflow issues */
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes bottom space/gap */
+}
+

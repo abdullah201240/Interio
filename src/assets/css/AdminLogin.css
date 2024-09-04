@@ -1,0 +1,125 @@
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background: url('../img/AdminLogin.png') center/cover no-repeat;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+  }
+
+  .login-box {
+    background-color: rgba(255, 255, 255);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    
+    width: 35%;
+    height: 60%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-box h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .logo img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 90%;
+    flex: 1;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    margin-left: 5%;
+  }
+  
+  .input-group .icon {
+    margin-right: 0.5rem;
+    color: #999;
+  }
+  
+  .input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+  }
+  .input-label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    margin-right: 80% !important;
+    
+}
+.input-label1 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+  margin-right: 75% !important;
+  
+}
+  
+  .input-group input::placeholder {
+    color: #aaa;
+  }
+  
+
+  .forgot-password3 {
+    color: #F8951F !important;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+    padding-left: 70%;
+    
+}
+
+.forgot-password3:hover {
+    color: #0056b3;
+}
+  
+  .bt {
+    background-color: #f39126;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    width: 91%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bt:hover {
+    background-color: #d67a1e;
+  }
+  .toggle-password-visibility2 {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    text-decoration: underline;
+    
+}
+  

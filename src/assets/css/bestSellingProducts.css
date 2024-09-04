@@ -1,0 +1,75 @@
+.card1 {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card1 img {
+    transition: opacity 0.3s ease;
+}
+
+.see-all-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card1:hover .see-all-btn {
+    display: block;
+    opacity: 1;
+}
+
+.card1:hover img {
+    opacity: 0.6;
+}
+.load-more-btn1 {
+    border: 2px solid orange;
+    color: orange;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .load-more-btn1:hover {
+    background-color: orange;
+    color: white;
+  }
+  
+  .see-all-btn {
+    border: 2px solid orange;
+    color: orange;
+    background-color: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .see-all-btn:hover {
+    background-color: orange;
+    color: white;
+  }
+  .text-center {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+  

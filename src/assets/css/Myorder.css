@@ -1,0 +1,210 @@
+/* General Styles */
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar, Categories, Footer */
+.navbar, .categories, .footer {
+    margin-bottom: 20px;
+}
+
+/* Last Order Section */
+.last-order {
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    width: 100%; /* Ensures it takes up full width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Order Info (optional) */
+.order-info {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f7f7ff;
+    margin: 20px auto;
+}
+
+.order-info-header, .order-info-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    font-weight: bold;
+}
+
+.order-info-header {
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.order-info-content {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.status-btn {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.status-btn.received {
+    background-color: #6a5acd;
+}
+
+.order-status {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.status-tracker {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.status-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    box-sizing: border-box;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    margin-bottom: 5px;
+}
+
+.active .circle {
+    background-color: orange;
+    border-color: orange;
+}
+
+.status-step p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.order-status h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.order-status .received {
+    color: orange;
+}
+
+.countdown {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Product Table */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-table th, .product-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.product-table td {
+    background-color: #fff;
+}
+
+.edit-button, .edit-button1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.edit-button1 {
+    color: #dc3545;
+}
+
+.edit-button:hover, .edit-button1:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .order-info-header, .order-info-content {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 12px;
+    }
+
+    .status-tracker {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .status-step {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .countdown {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .status-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .status-step p {
+        font-size: 10px;
+    }
+
+    .order-info-header, .order-info-content {
+        grid-template-columns: 1fr;
+        font-size: 10px;
+    }
+
+    .product-table th, .product-table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .product-table th {
+        font-size: 14px;
+    }
+}

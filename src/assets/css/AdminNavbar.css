@@ -1,0 +1,70 @@
+
+  
+  
+  .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    width: 100%;
+  }
+  
+
+  .btn-orange {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px; /* Space between button and icon on smaller screens */
+    flex-grow: 1; /* Allow the button to take available space */
+    text-align: center;
+  }
+  
+  .user-icon {
+    font-size: 40px;
+    color: gray;
+    margin-left: 16px;
+    flex-grow: 0;
+  }
+  
+  .user-icon:hover {
+    color: black;
+  }
+  .logo {
+    height: 40px;
+    margin-left: 15px;
+  }
+  
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items */
+    }
+  
+    .btn-orange {
+      font-size: 14px; /* Smaller text size on mobile */
+      padding: 6px 12px; /* Smaller padding on mobile */
+      width: 100%; /* Full-width button on mobile */
+      margin-left: 0; /* Center button on mobile */
+    }
+  
+    .user-icon {
+      font-size: 30px; /* Smaller icon size on mobile */
+      margin-left: 0; /* Center icon on mobile */
+      margin-top: 10px; /* Add space above icon on mobile */
+    }
+  }
+  

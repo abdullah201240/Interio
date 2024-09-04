@@ -1,0 +1,202 @@
+/* Contact bar styling */
+.contact-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Increased gap for better spacing */
+  background-color: rgb(248, 149, 31);
+  color: white;
+  padding: 10px 5%;
+  max-width: 100%;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.contact-bar h1 {
+  font-size: 16px; /* Increased font size for better readability */
+  margin: 0 10px; /* Adjusted margin for spacing */
+}
+
+.contact-bar .fa-icon {
+  font-size: 24px; /* Increased icon size */
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+  position: fixed; /* Fixed position */
+  top: 0; /* Stick to the top */
+  left: 0; /* Full width */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays on top */
+  background-color: white; /* Ensure background color for readability */
+  transition: top 0.3s; /* Smooth transition for navbar visibility */
+}
+
+/* Navbar visible state */
+.navbar-visible {
+  top: 0;
+}
+
+/* Navbar hidden state */
+.navbar-hidden {
+  top: -100px; /* Adjust this value based on your navbar height */
+}
+
+.navbar-logo {
+  height: 30px; /* Increased logo size */
+  margin: 10px 0;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 20px; /* Spacing between items */
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-nav .search-item {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Increased max-width for larger screens */
+}
+
+.search-bar .form-control {
+  width: 100%;
+  padding-left: 45px; /* Padding for search icon */
+  border-radius: 30px; /* Rounded corners */
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+.search-bar .form-control:focus {
+  border-color: orange;
+  box-shadow: 0 0 5px orange;
+}
+
+.search-bar .search-icon {
+  position: absolute;
+  left: 15px; /* Adjusted icon position */
+  top: 50%;
+  transform: translateY(-50%);
+  color: black !important;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: orange !important;
+}
+
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+.search-popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #f0f0f0;
+}
+
+.search-result-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.search-result-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-result-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.search-result-price {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0 0 0;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .contact-bar {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 10px; /* Reduced gap */
+    justify-content: center; /* Center items */
+  }
+
+  .navbar {
+    padding: 0.5rem;
+    max-width: 100%; /* Ensure full width */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adjust gap for readability */
+  }
+
+  .search-bar {
+    width: 100%; /* Full width search bar */
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-bar {
+    display: none; /* Hide contact bar on extra small screens */
+  }
+
+  .navbar {
+    padding: 0.5rem;
+    width: 100%; /* Full width */
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%; /* Full width */
+  }
+
+  .search-bar .form-control {
+    width: 100%; /* Full width search input */
+  }
+}

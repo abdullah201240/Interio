@@ -1,0 +1,87 @@
+.alert-table-container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 97%;
+    border-radius: 20px;
+    background: white;
+}
+
+.alert-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.alert-table th, .alert-table td {
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word; /* Ensure text wraps in smaller screens */
+}
+
+.alert-table thead th {
+    background-color: #f8f8f8;
+}
+
+.alert-table tbody tr:nth-child(even) {
+    background-color: #f3e8ff;
+}
+
+.item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Ensure the image fits within the container */
+    display: block; /* Ensure it behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .alert-table th, .alert-table td {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Reduce padding */
+    }
+
+    .item-image {
+        width: 40px; /* Adjust image size */
+        height: 40px;
+    }
+
+    .edit-button {
+        font-size: 14px; /* Adjust button size */
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .alert-table-container {
+        width: 100%; /* Full width for mobile */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .alert-table {
+        display: block; /* Block display to enable scrolling */
+        overflow-x: auto; /* Horizontal scroll if needed */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .alert-table th, .alert-table td {
+        display: inline-block;
+        width: auto; /* Adjust width for mobile */
+    }
+
+    .alert-table th, .alert-table td {
+        padding: 6px; /* Further reduce padding */
+        font-size: 12px; /* Adjust font size for very small screens */
+    }
+
+    .item-image {
+        width: 30px; /* Further reduce image size */
+        height: 30px;
+    }
+
+    .edit-button {
+        font-size: 12px; /* Further adjust button size */
+    }
+}
